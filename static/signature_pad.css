@@ -1,0 +1,11 @@
+.pad { color: #172b43; font: 14px/1.5 "Segoe UI", sans-serif; }
+.paper { position: relative; background: #fff; border: 1px solid #aebdd0; border-radius: 8px; overflow: hidden; }
+canvas { position: relative; z-index: 2; display: block; width: 100%; height: auto; aspect-ratio: 5 / 2; touch-action: none; cursor: crosshair; user-select: none; -webkit-user-select: none; }
+.hint { position: absolute; top: 31%; left: 0; right: 0; text-align: center; color: #74849a; font: italic 26px Georgia, serif; pointer-events: none; }
+.baseline { position: absolute; left: 7%; right: 7%; bottom: 24%; border-bottom: 1px solid #dce3ed; pointer-events: none; }
+.tools { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 12px; }
+.status { color: #53647a; font-size: 13px; }
+button { flex-shrink: 0; border: 1px solid #c4cfdd; border-radius: 6px; padding: 8px 12px; background: white; color: #234f84; font: inherit; cursor: pointer; }
+button:hover { background: #f2f5f9; border-color: #234f84; }
+button:focus-visible { outline: 3px solid #94b7df; outline-offset: 3px; }
+@media (max-width: 420px) { .tools { align-items: flex-start; } .status { max-width: 170px; } }
